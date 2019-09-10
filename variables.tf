@@ -1,3 +1,9 @@
+variable "region" {
+  type        = string
+  description = "AWS Region (e.g. `us-east-1` or `2`)"
+  default     = "us-east-1"
+}
+
 variable "namespace" {
   type        = string
   description = "Namespace (e.g. `eg` or `cp`)"
