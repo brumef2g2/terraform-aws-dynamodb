@@ -13,7 +13,7 @@ variable "namespace" {
 variable "stage" {
   type        = string
   description = "Stage (e.g. `prod`, `dev`, `staging`, `infra`)"
-  default     = ""
+  default     = "dev"
 }
 
 variable "enabled" {

@@ -1,3 +1,6 @@
+provider "aws" {
+  region = var.region
+}
 module "dynamodb_label" {
   source     = "git::https://github.com/cloudposse/terraform-null-label.git?ref=tags/0.14.1"
   enabled    = var.enabled
@@ -7,7 +10,6 @@ module "dynamodb_label" {
   delimiter  = var.delimiter
   attributes = var.attributes
   tags       = var.tags
-  region     = var.region
 }
 
 locals {
