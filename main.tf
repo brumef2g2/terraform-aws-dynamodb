@@ -7,6 +7,7 @@ module "dynamodb_label" {
   delimiter  = var.delimiter
   attributes = var.attributes
   tags       = var.tags
+  region     = var.region
 }
 
 locals {
