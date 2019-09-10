@@ -18,6 +18,7 @@ variable "enabled" {
 
 variable "name" {
   type        = string
+  default     = "TFapp"
   description = "Name  (e.g. `app` or `cluster`)"
 }
 
@@ -107,6 +108,7 @@ variable "enable_point_in_time_recovery" {
 
 variable "hash_key" {
   type        = string
+  default     = "brume"
   description = "DynamoDB table Hash Key"
 }
 
